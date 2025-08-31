@@ -226,6 +226,7 @@ Alice Johnson,09012345678,Class C,Grade 10
       try {
         const response = await fetch(url, {
           method: 'POST',
+          mode: 'no-cors',
           headers: {
             'Content-Type': 'application/json'
           },
