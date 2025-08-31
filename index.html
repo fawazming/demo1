@@ -55,7 +55,7 @@ Alice Johnson,09012345678,Class C,Grade 10
 
     <div>
       <label for="output" class="block font-semibold mb-1">Output JSON (Bulk SMS Format)</label>
-      <textarea id="output" rows="10" readonly class="w-full rounded border border-gray-300 p-3 font-mono text-sm bg-gray-100 resize-y"></textarea>
+      <textarea id="output" rows="10" class="w-full rounded border border-gray-300 p-3 font-mono text-sm bg-gray-100 resize-y"></textarea>
     </div>
     <div class="flex gap-2">
       <input type="text" id="slug" class="bg-indigo-600 text-white px-4 py-2 rounded hover:bg-indigo-700 transition">
@@ -221,7 +221,7 @@ Alice Johnson,09012345678,Class C,Grade 10
     }
 
     async function postData(slug, data) {
-      const url = `http://jserve.sgm.ng/data/${slug}`;
+      const url = `https://jserve.sgm.ng/data/${slug}`;
 
       try {
         const response = await fetch(url, {
